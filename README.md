@@ -11,6 +11,9 @@ cd hermes-0.8.1/
 ./utils/build/configure.py
 cd build
 ninja
+
+cd ./bin
+./hermes test.js
 ```
 
 Use below test.js to figure out which GC is enabled:
