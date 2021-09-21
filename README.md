@@ -16,6 +16,18 @@ cd ./bin
 ./hermes test.js
 ```
 
+To change GC mode, please change the file `./hermes/CMakeLists.txt`
+
+Change the line
+
+```
+set(HERMESVM_GCKIND NONCONTIG_GENERATIONAL
+  CACHE STRING
+  "HermesVM GC type: either NONCONTIG_GENERATIONAL, MALLOC, or HADES")
+
+```
+
+
 Use below test.js to figure out which GC is enabled:
 ```
 if (typeof console == "object")
