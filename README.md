@@ -1,4 +1,17 @@
 # Hermes JS Engine
+=======================
+```
+git clone https://github.com/facebook/hermes.git
+cd ./hermes
+./utils/build/configure.py
+cd build
+ninja
+```
+
+
+==========================
+
+
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/hermes/blob/HEAD/LICENSE)
 [![npm version](https://img.shields.io/npm/v/hermes-engine.svg?style=flat)](https://www.npmjs.com/package/hermes-engine)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/facebook/hermes/blob/HEAD/CONTRIBUTING.md)
