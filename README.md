@@ -13,6 +13,21 @@ cd build
 ninja
 ```
 
+Use below test.js to figure out which GC is enabled:
+```
+if (typeof console == "object")
+    print = console.log;
+if (typeof console === 'undefined')
+    console = { log: print };
+
+const gcName = HermesInternal.getRuntimeProperties().GC;
+// If you're running Hermes on the command line, use print.
+print(gcName);
+// If you're running Hermes in some kind of framework like React Native,
+// console.log should exist.
+console.log(gcName);
+```
+
 
 ==========================
 
