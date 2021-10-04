@@ -11,7 +11,7 @@ wget https://github.com/JavaScriptBench/hermes/archive/refs/tags/v0.8.1.zip
 chmod 755 v0.8.1.zip
 unzip ./v0.8.1.zip
 cd hermes-0.8.1/
-./utils/build/configure.py
+python3 ./utils/build/configure.py
 cd build
 ninja
 
