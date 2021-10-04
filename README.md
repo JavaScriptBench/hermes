@@ -1,7 +1,10 @@
 # Hermes JS Engine
 =======================
 
+Just
+
 ```
+sudo apt-get install -y ninja-build cmake g++ gcc
 mkdir hermes
 cd hermes
 wget https://github.com/JavaScriptBench/hermes/archive/refs/tags/v0.8.1.zip
